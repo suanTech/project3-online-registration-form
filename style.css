@@ -178,10 +178,6 @@ button {
         flex-direction: row;
         justify-content: space-between;
     }
-
-    label[for="zip"] {
-        text-align: left;
-    }
     
     legend {
         padding: 0;
@@ -194,6 +190,10 @@ button {
         padding: 10px 0;
     }
 
+    label[for="zip"] {
+        text-align: left;
+    }
+
     .box:not(textarea) {
         width: 70%;
     }
@@ -201,6 +201,7 @@ button {
     input[id="zip"] {
         width: 25%;
         margin-right: 45%;
+        align-self: auto;
     }
     
 
