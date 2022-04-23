@@ -48,7 +48,7 @@ h2 {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 3px;
-    padding-bottom: 15px;
+    padding: 0 10px 15px;
     border-bottom: 4px solid;
 }
 
@@ -56,6 +56,16 @@ h2 {
     padding: 25px 0;
     border-top: 2px solid;
     margin: 0 0 10px 0;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex label {
+    align-self: flex-start;
 }
 
 legend {
@@ -68,14 +78,8 @@ legend {
 fieldset {
     border: 0;
     margin: 0;
-    padding: 0;
     min-width: 0;
     padding: 0.01em 0 0 0;
-}
-
-#contact_info label,
-label[for="othertopics"] {
-    display: block;
 }
 
 label,
@@ -102,10 +106,9 @@ select {
 }
 
 .box {
-    display: block;
     background-color:rgb(201, 198, 198);
+    margin: 0;
     padding: 10px 15px;
-    margin: 0 auto;
     width: 100%;
     min-height: 3rem;
     border: none;
@@ -120,9 +123,8 @@ input[type="radio"] {
 }
 
 input[id="zip"] {
-    display: inline-block;
-    width: 150px;
-    clear: right;
+    width: 50%;
+    align-self: flex-start;
 }
 
 .textbox {
@@ -171,6 +173,15 @@ button {
     #contact_info {
         margin-top: 15px;
     }
+
+    .flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    label[for="zip"] {
+        text-align: left;
+    }
     
     legend {
         padding: 0;
@@ -179,19 +190,18 @@ button {
     }
 
     #contact_info label{
-        display: inline-block;
-        margin: 15px auto;
-        width: 25%;
+        margin: 15px 0;
         padding: 10px 0;
     }
+
     .box:not(textarea) {
-        display: inline-block;
-        width: 74%;
+        width: 70%;
     }
+
     input[id="zip"] {
-        display: inline-block;
-        width: 150px;
-        clear: right;
+        width: 25%;
+        margin-right: 45%;
     }
+    
 
 }
