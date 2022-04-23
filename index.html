@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
         <div id="logo">
             <h1 class="logo-text">THE CODE REVIEW</h1>
@@ -23,55 +24,57 @@
             <p class="light">Get the latest news on how your code is doing right in your inbox</p>
         </div>
         <form>
-            <div class="container form">
-                <fieldset id="contact_info">
-                    <legend>Contact Information</legend>
-                    <label for="name">Full Name</label>
-                    <input class="box" type="text" id="name" name="user_name" required placeholder="Required*">
-                    <label for="email">Email Address</label>
-                    <input class="box" type="email" id="email" name="user_email" required placeholder="Required*">
-                    <label for="phone">Phone Number</label>
-                    <input class="box" type="tel" id="phone" name="user_phone" placeholder="Enter your phone number">
-                    <label for="address_street">Street Address</label>
-                    <input class="box" type="text" id="address_street" name="user_address" placeholder="Enter your street address">
-                    <label for="address_city">City</label>
-                    <input class="box" type="text" id="address_city" name="user_city" placeholder="Enter your city">
-                    <label for="state">State</label>
-                    <select class="box" name="state" id="state">
-                        <option value="" disabled selected>Choose State</option>
-                        <option value="australian capital territory">Australian Capital Territory</option>
-                        <option value="new south wales">New South Wales</option>
-                        <option value="northern territory">Northern Territory</option>
-                        <option value="queensland">Queensland</option>
-                        <option value="south australia">South Australia</option>
-                        <option value="tasmania">Tasmania</option>
-                        <option value="victoria">Victoria</option>
-                        <option value="western australia">Western Australia</option>
-                    </select>
-                    <label for="zip">Zip Code</label>
-                    <input class="zip_box box" type="text" id="zip" name="user_zip" placeholder="Zip Code">
-                </fieldset>
-            </div>
-            <div class="container form">
-                <fieldset id="newsletter">
-                    <legend>Newsletter</legend>
-                    <p>Select the newsletters you would like to receive</p>
-                    <input type="checkbox" id="html" name="news_html">
-                    <label for="html">HTML News</label><br>
-                    <input type="checkbox" id="css" name="news_css">
-                    <label for="css">CSS News</label><br>
-                    <input type="checkbox" id="javascript" name="news_javascript">
-                    <label for="javascript">Javascript News</label><br>
-                    <p>Newsletter format</p>
-                    <input type="radio" id="fm_html" name="format_html">
-                    <label for="fm_html">HTML</label><br>
-                    <input type="radio" id="fm_text" name="format_text">
-                    <label for="fm_text">Plain text</label><br>
-                    <label for="othertopics">Other topics you'd like to hear about</label>
-                    <textarea class="box textbox" id="othertopics" placeholder="Please let us know what you'd like to hear about from us..."></textarea>
-                    <button type="submit">Sign Up</button>
-                    <p class="copyright light">Copyright The Code Review</p>
-                </fieldset>
+            <div class="container">
+                <div class="form">
+                    <fieldset id="contact_info">
+                        <legend>Contact Information</legend>
+                        <label for="name">Full Name</label>
+                        <input class="box" type="text" id="name" name="user_name" required placeholder="Required*">
+                        <label for="email">Email Address</label>
+                        <input class="box" type="email" id="email" name="user_email" required placeholder="Required*">
+                        <label for="phone">Phone Number</label>
+                        <input class="box" type="tel" id="phone" name="user_phone" placeholder="Enter your phone number">
+                        <label for="address_street">Street Address</label>
+                        <input class="box" type="text" id="address_street" name="user_address" placeholder="Enter your street address">
+                        <label for="address_city">City</label>
+                        <input class="box" type="text" id="address_city" name="user_city" placeholder="Enter your city">
+                        <label for="state">State</label>
+                        <select class="box" name="state" id="state">
+                            <option value="" disabled selected>Choose State</option>
+                            <option value="australian capital territory">Australian Capital Territory</option>
+                            <option value="new south wales">New South Wales</option>
+                            <option value="northern territory">Northern Territory</option>
+                            <option value="queensland">Queensland</option>
+                            <option value="south australia">South Australia</option>
+                            <option value="tasmania">Tasmania</option>
+                            <option value="victoria">Victoria</option>
+                            <option value="western australia">Western Australia</option>
+                        </select>
+                        <label for="zip">Zip Code</label>
+                        <input class="zip_box box" type="text" id="zip" name="user_zip" placeholder="Zip Code">
+                    </fieldset>
+                </div>
+                <div class="form">
+                    <fieldset id="newsletter">
+                        <legend>Newsletter</legend>
+                        <p>Select the newsletters you would like to receive</p>
+                        <input type="checkbox" id="html" name="news_html">
+                        <label for="html">HTML News</label><br>
+                        <input type="checkbox" id="css" name="news_css">
+                        <label for="css">CSS News</label><br>
+                        <input type="checkbox" id="javascript" name="news_javascript">
+                        <label for="javascript">Javascript News</label><br>
+                        <p>Newsletter format</p>
+                        <input type="radio" id="fm_html" name="format_html">
+                        <label for="fm_html">HTML</label><br>
+                        <input type="radio" id="fm_text" name="format_text">
+                        <label for="fm_text">Plain text</label><br>
+                        <label for="othertopics">Other topics you'd like to hear about</label>
+                        <textarea class="box textbox" id="othertopics" placeholder="Please let us know what you'd like to hear about from us..."></textarea>
+                        <button type="submit">Sign Up</button>
+                        <p class="copyright light">Copyright The Code Review</p>
+                    </fieldset>
+                </div>
             </div>
         </form>
     </main>
