@@ -144,6 +144,7 @@ button {
     font-weight: bold;
     cursor: pointer;
 }
+
 .copyright {
     text-align: center;
     font-weight: 400;
@@ -185,7 +186,7 @@ button {
         font-size: 1.2em;
     }
 
-    #contact_info label{
+    .flex label{
         margin: 15px 0;
         padding: 10px 0;
     }
@@ -203,6 +204,4 @@ button {
         margin-right: 45%;
         align-self: auto;
     }
-    
-
 }
