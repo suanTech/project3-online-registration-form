@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+select,
+button {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+    color:#26323e;
+    background-color:rgb(238, 233, 233);
+    padding: 0;
+    margin: auto;
+    margin-bottom: 160px;
+}
+
+h1,
+h2 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.light {
+    font-size: .85em;
+    font-weight: 300;
+    color: rgb(96, 92, 92);
+}
+
+#logo {
+    background:#26323e;
+    color: white;
+    margin: 0;
+    padding: 1.5rem 0;
+}
+
+.logo-text {
+    text-align: center;
+}
+
+.container {
+    margin: 0 15px;
+    padding: 1.5rem 0;
+}
+
+#signup_info {
+    text-align: center;
+    margin-bottom: 3px;
+    border-bottom: 4px solid;
+}
+
+.form {
+    margin: 0 15px 5px 15px;
+    border-top: 2px solid;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 5px 0;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    padding: 0.01em 0 0 0;
+}
+
+#contact_info label,
+label[for="othertopics"] {
+    display: block;
+}
+
+label,
+p,
+input,
+select {
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 200;
+    color:#263741;
+}
+
+::placeholder {
+    font-family: 'Source Serif Pro', serif;
+    color:rgb(96, 92, 92);
+    text-align:right;
+    font-size: .8em;
+    font-style: italic;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    display: block;
+    background-color:rgb(201, 198, 198);
+    padding: 10px 15px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 3rem;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+input[id="zip"] {
+    display: inline-block;
+    width: 150px;
+    clear: right;
+}
+
+textarea {
+    margin: 15px 0;
+    min-height: 95px;
+}
+
+button {
+    width: 100%;
+    padding: .9em;
+    margin: 10px 0;
+    background: #29527B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.copyright {
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+}
+
+:focus {
+    outline: 2px solid #7b297b;
+    ;
+}
+@media (min-width: 768px) {
+
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #signup_info {
+        margin-top: 40px;
+    }
+
+    #contact_info {
+        margin-top: 15px;
+    }
+    
+    legend {
+        padding: 0;
+        margin-bottom: 15px;
+        font-size: 1.2em;
+    }
+
+    #contact_info label{
+        display: inline-block;
+        margin: 15px auto;
+        width: 25%;
+        padding: 10px 0;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        display: inline-block;
+        width: 74%;
+    }
+    input[id="zip"] {
+        display: inline-block;
+        width: 150px;
+        clear: right;
+    }
+
+}

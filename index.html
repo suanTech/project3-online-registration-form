@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE CODE REVIEW | Signup for our newsletter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1 class="logo-text">THE CODE REVIEW</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" id="signup_info">
+            <h2>Signup for our newsletter</h2>
+            <p class="light">Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+        <form>
+            <div class="container form">
+                <fieldset id="contact_info">
+                    <legend>Contact Information</legend>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="user_name" required placeholder="Required">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="user_email" required placeholder="Required">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="user_phone">
+                    <label for="address_street">Street Address</label>
+                    <input type="text" id="address_street" name="user_address">
+                    <label for="address_city">City</label>
+                    <input type="text" id="address_city" name="user_city">
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option value="" disabled selected>Choose State</option>
+                        <option value="australian capital territory">Australian Capital Territory</option>
+                        <option value="new south wales">New South Wales</option>
+                        <option value="northern territory">Northern Territory</option>
+                        <option value="queensland">Queensland</option>
+                        <option value="south australia">South Australia</option>
+                        <option value="tasmania">Tasmania</option>
+                        <option value="victoria">Victoria</option>
+                        <option value="western australia">Western Australia</option>
+                    </select>
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="user_zip" class="zip_box">
+                </fieldset>
+            </div>
+            <div class="container form">
+                <fieldset id="newsletter">
+                    <legend>Newsletter</legend>
+                    <p>Select the newsletters you would like to receive</p>
+                    <input type="checkbox" id="html" name="news_html">
+                    <label for="html">HTML News</label><br>
+                    <input type="checkbox" id="css" name="news_css">
+                    <label for="css">CSS News</label><br>
+                    <input type="checkbox" id="javascript" name="news_javascript">
+                    <label for="javascript">Javascript News</label><br>
+                    <p>Newsletter format</p>
+                    <input type="radio" id="fm_html" name="format_html">
+                    <label for="fm_html">HTML</label><br>
+                    <input type="radio" id="fm_text" name="format_text">
+                    <label for="fm_text">Plain text</label><br>
+                    <label for="othertopics">Other topics you'd like to hear about</label>
+                    <textarea id="othertopics"></textarea>
+                    <button type="submit">Sign Up</button>
+                    <p class="copyright light">Copyright The Code Review</p>
+                </fieldset>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
