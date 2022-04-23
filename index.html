@@ -27,17 +27,17 @@
                 <fieldset id="contact_info">
                     <legend>Contact Information</legend>
                     <label for="name">Full Name</label>
-                    <input class="box" type="text" id="name" name="user_name" required placeholder="Required">
+                    <input class="box" type="text" id="name" name="user_name" required placeholder="Required*">
                     <label for="email">Email Address</label>
-                    <input class="box" type="email" id="email" name="user_email" required placeholder="Required">
+                    <input class="box" type="email" id="email" name="user_email" required placeholder="Required*">
                     <label for="phone">Phone Number</label>
-                    <input class="box" type="tel" id="phone" name="user_phone">
+                    <input class="box" type="tel" id="phone" name="user_phone" placeholder="Enter your phone number">
                     <label for="address_street">Street Address</label>
-                    <input class="box" type="text" id="address_street" name="user_address">
+                    <input class="box" type="text" id="address_street" name="user_address" placeholder="Enter your street address">
                     <label for="address_city">City</label>
-                    <input class="box" type="text" id="address_city" name="user_city">
+                    <input class="box" type="text" id="address_city" name="user_city" placeholder="Enter your city">
                     <label for="state">State</label>
-                    <select name="state" id="state">
+                    <select class="box" name="state" id="state">
                         <option value="" disabled selected>Choose State</option>
                         <option value="australian capital territory">Australian Capital Territory</option>
                         <option value="new south wales">New South Wales</option>
@@ -49,7 +49,7 @@
                         <option value="western australia">Western Australia</option>
                     </select>
                     <label for="zip">Zip Code</label>
-                    <input class="zip_box box" type="text" id="zip" name="user_zip">
+                    <input class="zip_box box" type="text" id="zip" name="user_zip" placeholder="Zip Code">
                 </fieldset>
             </div>
             <div class="container form">
@@ -68,7 +68,7 @@
                     <input type="radio" id="fm_text" name="format_text">
                     <label for="fm_text">Plain text</label><br>
                     <label for="othertopics">Other topics you'd like to hear about</label>
-                    <textarea class="box" id="othertopics"></textarea>
+                    <textarea class="box textbox" id="othertopics" placeholder="Please let us know what you'd like to hear about from us..."></textarea>
                     <button type="submit">Sign Up</button>
                     <p class="copyright light">Copyright The Code Review</p>
                 </fieldset>
