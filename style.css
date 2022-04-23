@@ -95,7 +95,7 @@ select {
 
 .textbox::placeholder {
     text-align: left;
-    font-size: .9em;
+    font-size: 1.1em;
 }
 
 .box {
